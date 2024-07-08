@@ -3,33 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
-   
+    <meta name="description" content="A simple and enhanced blog to share your thoughts.">
+    <meta name="keywords" content="blog, simple blog, enhanced blog, personal blog">
+    <meta name="author" content="Your Name">
+    <title>Enhanced Simple Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Web Page</h1>
-    </header>
+
+<header>
+    <h1><a href="#">My Enhanced Blog</a></h1>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
-    <section id="home">
-        <h2>Home</h2>
-        <p>This is the home section of my first web page.</p>
-    </section>
-    <section id="about">
-        <h2>About</h2>
-        <p>This section provides information about the purpose of the web page.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Here is where visitors can find contact information.</p>
-    </section>
-    <footer>
-        <p>© 2024 My First Web Page. All rights reserved.</p>
-    </footer>
+</header>
+
+<div class="container">
+    <div class="content">
+        <h2>Blog Post Title 1</h2>
+        <p>Published on January 1, 2023</p>
+        <img src="image/pic1.jpg" alt="Laptop" width="400px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <button onclick="toggleContent(this)">Read More</button>
+        <p class="extra-content" style="display:none;">Additional content for Blog Post Title 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        <div class="comments">
+            <h3>Comments</h3>
+            <div class="comment">
+                <p><strong>John:</strong> Great post!</p>
+            </div>
+            <div class="comment">
+                <p><strong>Jane:</strong> Very informative, thanks!</p>
+            </div>
+            <div class="comment-form">
+                <textarea placeholder="Add a comment"></textarea>
+                <button>Add Comment</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h2>Blog Post Title 2</h2>
+        <p>Published on February 1, 2023</p>
+        <img src="image/pic.jpg" alt="Laptop" width="400px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <button onclick="toggleContent(this)">Read More</button>
+        <p class="extra-content" style="display:none;">Additional content for Blog Post Title 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        <div class="comments">
+            <h3>Comments</h3>
+            <div class="comment">
+                <p><strong>Mary:</strong> Love this!</p>
+            </div>
+            <div class="comment">
+                <p><strong>Mark:</strong> Very insightful.</p>
+            </div>
+            <div class="comment-form">
+                <textarea placeholder="Add a comment"></textarea>
+                <button>Add Comment</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h2>Blog Post Title 3</h2>
+        <p>Published on March 1, 2023</p>
+        <img src="image/pic2.jpg" alt="Laptop" width="400px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <button onclick="toggleContent(this)">Read More</button>
+        <p class="extra-content" style="display:none;">Additional content for Blog Post Title 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+        <div class="comments">
+            <h3>Comments</h3>
+            <div class="comment">
+                <p><strong>Alice:</strong> Fantastic read!</p>
+            </div>
+            <div class="comment">
+                <p><strong>Bob:</strong> Keep up the good work.</p>
+            </div>
+            <div class="comment-form">
+                <textarea placeholder="Add a comment"></textarea>
+                <button>Add Comment</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>Enhanced Simple Blog &copy; 2023</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
 
