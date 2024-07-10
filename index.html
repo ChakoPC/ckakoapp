@@ -3,106 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple and enhanced blog to share your thoughts.">
-    <meta name="keywords" content="blog, simple blog, enhanced blog, personal blog">
-    <meta name="author" content="Your Name">
-    <title>Enhanced Simple Blog</title>
+    <title>Advanced Blog</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  
 </head>
 <body>
-
-<header>
-    <h1><a href="#">My Enhanced Blog</a></h1>
-    <nav>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="#">My Advanced Blog</a></h1>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
         </div>
-        <ul id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    </header>
 
-<div class="container">
-    <div class="content">
-        <h2>Blog Post Title 1</h2>
-        <p>Published on July 6, 2024</p>
-        <img src="image/pic1.jpg" alt="Laptop" width="400px">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        <button onclick="toggleContent(this)">Read More</button>
-        <p class="extra-content" style="display:none;">Additional content for Blog Post Title 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
-        <div class="comments">
-            <h3>Comments</h3>
-            <div class="comment">
-                <p><strong>John:</strong> Great post!</p>
+    <div class="container">
+        <div class="grid-container">
+            <div class="content">
+                <img src="image/pic1.jpg" alt="Blog Post Image 1" width="600px" height="200px">
+                <h2>Blog Post Title 1</h2>
+                <p>Published on July 8, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
             </div>
-            <div class="comment">
-                <p><strong>Jane:</strong> Very informative, thanks!</p>
+            <div class="content">
+                <img src="image/pic.jpg" alt="Blog Post Image 2" width="600px" height="200px">
+                <h2>Blog Post Title 2</h2>
+                <p>Published on July 9, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
             </div>
-            <div class="comment-form">
-                <textarea placeholder="Add a comment"></textarea>
-                <button>Add Comment</button>
-            </div>
-        </div>
-    </div>
-    
-    <div class="content">
-        <h2>Blog Post Title 2</h2>
-        <p>Published on July 7, 2024</p>
-        <img src="image/pic.jpg" alt="Laptop" width="400px">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        <button onclick="toggleContent(this)">Read More</button>
-        <p class="extra-content" style="display:none;">Additional content for Blog Post Title 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
-        <div class="comments">
-            <h3>Comments</h3>
-            <div class="comment">
-                <p><strong>Mary:</strong> Love this!</p>
-            </div>
-            <div class="comment">
-                <p><strong>Mark:</strong> Very insightful.</p>
-            </div>
-            <div class="comment-form">
-                <textarea placeholder="Add a comment"></textarea>
-                <button>Add Comment</button>
+            <div class="content">
+                <img src="image/pic2.jpg" alt="Blog Post Image 3" width="600px" height="200px">
+                <h2>Blog Post Title 3</h2>
+                <p>Published on July 10, 2024</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
             </div>
         </div>
     </div>
-    
-    <div class="content">
-        <h2>Blog Post Title 3</h2>
-        <p>Published on July 8, 2024</p>
-        <img src="image/pic2.jpg" alt="Laptop" width="400px">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        <button onclick="toggleContent(this)">Read More</button>
-        <p class="extra-content" style="display:none;">Additional content for Blog Post Title 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
-        <div class="comments">
-            <h3>Comments</h3>
-            <div class="comment">
-                <p><strong>Alice:</strong> Fantastic read!</p>
-            </div>
-            <div class="comment">
-                <p><strong>Bob:</strong> Keep up the good work.</p>
-            </div>
-            <div class="comment-form">
-                <textarea placeholder="Add a comment"></textarea>
-                <button>Add Comment</button>
-            </div>
-        </div>
-    </div>
-</div>
 
-<footer class="footer">
-    <p>Enhanced Simple Blog &copy; 2024</p>
-</footer>
+    <footer class="footer">
+        <p>Advanced Blog &copy; 2024</p>
+    </footer>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
