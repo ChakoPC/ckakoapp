@@ -53,7 +53,7 @@ header .menu-toggle .bar {
 .content {
     padding: 20px;
     background: #ffffff;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
 }
 .content h2 {
     margin-top: 0;
